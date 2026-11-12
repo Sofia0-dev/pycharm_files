@@ -1,0 +1,27 @@
+{% extends 'master.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h3>full name is {{ jina }}</h3>
+        <p>{{ age }} years old</p>
+        <p>{{ uzito }} kg</p>
+
+        {% for sub in subjects %}
+            <p>{{ sub }}</p>
+        {% endfor %}
+
+        {% if isDisabled %}
+            <P>Has disability</P>
+        {% else %}
+            <p>Not disabled</p>
+        {% endif %}
+
+
+    </div>
+{% endblock %}
+
+
+
+

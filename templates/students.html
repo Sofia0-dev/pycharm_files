@@ -1,0 +1,29 @@
+{% extends 'master.html' %}
+
+{% block title %} Students {% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Score</th>
+                </tr>
+
+                {% fro student in students %}
+                <tr>
+                    <td>{{ student.Names }}</td>
+                    <td>{{ student.email }}</td>
+                    <td>{{ students.age }}</td>
+                    <td>{{ student.score }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
